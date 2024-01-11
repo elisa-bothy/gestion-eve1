@@ -7,13 +7,25 @@ const yellow = document.getElementById("yellow");
 yellow.addEventListener("click", fonctionResponseYellow);
 
 function fonctionResponseRed(){
-    div.style.background = 'RED';
+    if (!div.classList.contains('RED')){
+        div.classList.add('RED');
+        div.classList.remove('YELLOW');
+        div.classList.remove('GREEN');
+    }
 }
 
-function fonctionResponseGreen(){
-    div.style.background = 'GREEN';
+function fonctionResponseGreen(evt){
+    if (!div.classList.contains('GREEN')){
+        div.classList.add('GREEN');
+        div.classList.remove('YELLOW');
+        div.classList.remove('RED');
+    }
 }
 
-function fonctionResponseYellow(){
-    div.style.background = 'YELLOW';
+function fonctionResponseYellow(evt){
+    if (!div.classList.contains('YELLOW')){
+        div.classList.add('YELLOW');
+        div.classList.remove('RED');
+        div.classList.remove('GREEN');
+    }
 }
