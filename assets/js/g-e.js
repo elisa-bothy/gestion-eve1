@@ -1,6 +1,6 @@
-const red = document.getElementsByClassName('RED');
+const red = document.getElementById('RED');
 red.addEventListener("click", fonctionResponseRed);
-const blue = document.getElementsByClassName('BLUE');
+const blue = document.getElementByID('BLUE');
 blue.addEventListener("click", fonctionResponseBlue);
 
 
