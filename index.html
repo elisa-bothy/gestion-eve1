@@ -1,27 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exercice GE4</title>
+    <link rel="stylesheet" href="./assets/css/ge4.css">
+    <script src="./assets/js/ge4.js" defer></script>
 </head>
+
 <body>
-    <p class="RED" id="RED">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora dolorem deleniti consectetur, minima totam, quis voluptas rerum natus voluptatum aperiam facilis, id enim explicabo. Omnis dolor veritatis minus cumque debitis.
-        Fugiat eveniet quas amet officia pariatur. Quibusdam enim hic voluptatum ipsam accusantium recusandae optio iusto quis asperiores, soluta expedita beatae mollitia iste inventore. Ipsum asperiores ullam voluptatum cum soluta atque?
-        Voluptates officia animi suscipit aliquam nisi sapiente amet ipsa eius accusamus, officiis error temporibus dignissimos neque fuga sit laborum delectus dolorem culpa doloremque quia quam! Quasi, id similique? Molestias, ratione?
-        Vero quas qui molestias, repellendus quis eum tenetur blanditiis nisi. Totam tempore inventore facilis ipsa voluptas quis error explicabo, placeat dolorum incidunt veritatis animi harum et fugit temporibus sint nihil.
-        Sequi veritatis quia omnis deleniti magni tempore rerum vel dolore nulla voluptatem ullam fugit distinctio sunt illum accusamus maxime, eum facilis excepturi aliquam consequatur debitis minima unde ducimus magnam. Maiores?
-    </p>
-    <p class="BLUE" id="BLUE">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque nisi ex provident aut, laborum accusamus consequuntur corporis, minima temporibus, suscipit nobis eius magnam iure fugiat maiores architecto nam sunt iste?
-        Molestias vero necessitatibus, dolorum aperiam facere exercitationem aliquid corporis harum vitae qui dolor pariatur dolore nam quidem! In voluptas facere eum repellat eveniet odit quam, iusto, architecto dolor porro ad.
-        Eveniet tempora voluptate, doloremque maxime delectus accusantium, adipisci omnis ipsum impedit ipsam provident animi autem corporis sint, molestias fugit nostrum voluptas possimus? Blanditiis commodi neque ut, iure in consectetur eius.
-        Vel nesciunt soluta provident architecto, quo nostrum amet totam perspiciatis iste repellat itaque deserunt corrupti dolorum inventore placeat ab vero cupiditate praesentium. Vero asperiores deleniti culpa aut eligendi quis at?
-        Quibusdam, impedit nam! Doloremque autem dicta laborum repellendus iusto itaque nihil reiciendis odio voluptate delectus? Nemo in repellendus, aut error quasi et totam omnis ratione, rem, nisi sit ea pariatur.
-        Rem accusantium nemo, blanditiis sint itaque doloribus quaerat ipsum quasi deserunt ipsam quisquam, doloremque, cupiditate voluptatibus porro sit accusamus libero dolores delectus eos distinctio. Ratione, repudiandae. Sapiente illo nihil ratione.
-    </p>
-    <script src="assets/js/g-e.js"></script>
+    <form action="checkForm.php" method="post">
+        <div>
+            <label for="login">login</label>
+            <input type="text" id="login" name="login" placeholder="Login">
+            <span class="docMsg">Ce champ doit être rempli</span>
+        </div>
+        <div>
+            <label for="pwd">Mot de passe</label>
+            <input type="password" id="pwd" name="pwd" placeholder="Mot de passe">
+            <span class="docMsg">Doit contenir au moins 12 caractères contenant au moins une lettre majuscule, une
+                minuscule et un chiffre.</span>
+        </div>
+        <div>
+            <label for="confirm">Confirmation</label>
+            <input type="password" id="confirm" name="confirm" placeholder="Confirmation">
+            <span class="docMsg">Doit correspondre au mot de passe</span>
+        </div>
+        <div>
+            <button type="submit">Envoyer</button>
+            <button type="reset">Annuler</button>
+        </div>
+    </form>
 </body>
 </html>
